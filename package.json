@@ -1,6 +1,6 @@
 {
   "version": "2.6.0",
-  "name": "npm",
+  "name": "npm-for-cnpm",
   "description": "a package manager for JavaScript",
   "keywords": [
     "package manager",
@@ -179,7 +179,6 @@
     "test": "tap --timeout 120 test/tap/*.js",
     "tap": "tap --timeout 120 test/tap/*.js",
     "test-all": "node ./test/run.js && tap test/tap/*.js",
-    "prepublish": "node bin/npm-cli.js prune --prefix=. --no-global && rm -rf test/*/*/node_modules && make -j8 doc",
     "dumpconf": "env | grep npm | sort | uniq"
   },
   "license": "Artistic-2.0"
